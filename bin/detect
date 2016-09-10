@@ -21,6 +21,7 @@
 #  build pack needs to do anything to bootstrap the
 #  python scripts, like install Python.
 BP=$(dirname $(dirname $0))
+echo 'this is prachi custom buidpck'
 export PYTHONPATH=$BP/lib
 VERSION=`cat $BP/VERSION`
 python $BP/scripts/detect.py $1 $VERSION
